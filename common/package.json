@@ -1,0 +1,13 @@
+{
+  "name": "common",
+  "version": "1.0.0",
+  "description": "just for common files like yupschemas",
+  "main": "index.ts",
+  "author": "vlecoq-v & morgani",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@types/yup": "^0.26.26",
+    "yup": "^0.27.0"
+  }
+}

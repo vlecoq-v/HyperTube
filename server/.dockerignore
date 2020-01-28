@@ -1,0 +1,4 @@
+node_modules
+/var/lib/postgresql/data
+sessions/*
+**/downloads/*

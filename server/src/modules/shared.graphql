@@ -1,0 +1,46 @@
+type Error {
+  path: String!
+  msg: String!
+}
+
+type User {
+  id: String!
+  firstName: String!
+  lastName: String!
+  seenFilm: [String!]
+  login: String!
+  email: String!
+  avatar: String
+  language: String!
+}
+
+type Commentary {
+  id: String!
+  film_id: String!
+  authorId: User!
+  createdAt: String!
+  text: String!
+}
+
+type Film {
+  imdbId: String
+  ytsId: String
+  title: String!
+  year: Int!
+  synopsis: String!
+  rating: Int!
+  poster: String!
+  torrents: [String!]
+  genres: [String!]
+  seen: Boolean
+}
+
+# type Torrent {
+#   fileSize: String!
+#   quality: String!
+#   language: String!
+#   peer: Int!
+#   seed: Int!
+#   url: String!
+#   provider: String!
+# }
