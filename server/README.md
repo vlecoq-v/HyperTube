@@ -74,16 +74,3 @@ insertino update or other is handled by the typeorm defined entity (ex User.upda
 
 modules (3) :
 modules are the equivalent of routes --> the login moduled is called when someone makes a graphql request to the BACK_HOST. Each module can call other functions (in submodules) for instance for session creation
-
-# vielle doc --> plus pertinente mais je la garde au cas ou
-
-docker run -p 5432:5432 -d \
- -e POSTGRES_PASSWORD=postgres \
- -e POSTGRES_USER=postgres \
- -e POSTGRES_DB=stripe-example \
- -v pgdata:/var/lib/postgresql/data \
- postgres
-
-psql stripe-example -h 127.0.0.1 -U postgres
-
-docker exec -it bdca2b8c09b7 psql -U postgres stripe-exampl
